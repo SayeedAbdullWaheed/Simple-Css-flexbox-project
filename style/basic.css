@@ -1,0 +1,62 @@
+/* *********************************COLORS **/
+:root {
+  --primary-color: #3d5af1;
+  --secondary-color: #22d1ee;
+  --tertiary-color: #e2f3f5;
+  --dark-color: #0e153a;
+  --white-color: #fff;
+  --black-color: #000;
+  --light-gray-color: rgb(248, 248, 248);
+
+}
+  
+
+/* *********************************RESETS **/
+*{
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::after {
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px, 10px/16px = 62,5% */
+}
+
+body{
+  font-family: 'Open Sans', sans-serif;
+  min-height: 100vh;
+  background-color: #FCFEFF;
+}
+
+.contianer {
+  /* height: 100vh; */
+  background-image: url(../img/bg-img-1.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 1.5rem;
+}
+
+.btn {
+  padding: 1rem 2rem;
+  border-radius: .5rem;
+  border: 1px solid var(--primary-color);
+  background-color: var(--primary-color);
+  color: var(--tertiary-color);
+  font-weight: 600;
+  align-self: center;
+  transition: all .3s;
+}
+
+.btn:hover{
+  background-color: transparent;
+  color: var(--dark-color);
+  border: 1px solid var(--primary-color);
+}
+
